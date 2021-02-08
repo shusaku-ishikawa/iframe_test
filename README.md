@@ -5,7 +5,7 @@ iframeで埋め込まれる対象のdjangoアプリ
 
 python manage.py runsslserver 0.0.0.0:8001 --certificate foobar.crt --key foobar.key
 
-URL: https://shusaku.ishikawa2:8000
+URL: https://shusaku.ishikawa:8001
 
 
 # project2
@@ -17,10 +17,14 @@ iframeでproject1を読み込むためのdjangoアプリ
 
 python manage.py runsslserver --certificate ../project1/foobar2.crt --key ../project1/foobar2.key
 
-URL: https://shusaku.ishikawa:8001
+URL: https://shusaku.ishikawa2:8000
 
 #その他環境構築
 
+hosts に
+127.0.0.1 shusaku.ishikawa
+127.0.0.1 shusaku.ishikawa2
+を追加してドメインアクセスできるようにする
 
 
 
