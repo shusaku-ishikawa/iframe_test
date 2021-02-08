@@ -1,0 +1,7 @@
+asgiref==3.3.1
+Django==3.1.6
+django-cors-headers==3.7.0
+django-request-logging==0.7.2
+django-sslserver==0.22
+pytz==2021.1
+sqlparse==0.4.1
